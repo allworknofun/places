@@ -22,7 +22,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@place.picture_url, :width => 400) if @place.picture.present? %>
+  <%= @place.picture %>
 </p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |
